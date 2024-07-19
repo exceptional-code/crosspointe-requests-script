@@ -119,7 +119,7 @@ function newCardBack() {
     cardBack.style.fontWeight = 'bold';
     cardBack.style.color = '#fff';
     cardBack.style.textShadow = '2px 2px 4px #000';
-    cardBack.style.fontSize = '1rem';
+    cardBack.style.fontSize = '1.6rem';
     cardBack.style.display = 'flex'
     cardBack.style.flexDirection = 'column';
     cardBack.style.alignItems = 'center';
@@ -147,7 +147,7 @@ function newCardFront(card) {
     cardFront.style.width = '100%';
     cardFront.style.height = '100%';
     cardFront.style.backfaceVisibility = 'hidden';
-    cardFront.style.fontSize = '1rem';
+    cardFront.style.fontSize = '1.6rem';
     cardFront.style.display = 'flex'
     cardFront.style.flexDirection = 'column';
     cardFront.style.alignItems = 'center';

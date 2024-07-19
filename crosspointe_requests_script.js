@@ -90,7 +90,7 @@ function newCard(element) {
     card.style.position = 'absolute';
     card.style.width = '90%';
     card.style.height = '90%';
-    card.style.fontSize = '1rem';
+    card.style.fontSize = '1.6rem';
     card.style.transformStyle = 'preserve-3d';
     card.style.transition = 'all 0.8s ease';
 
@@ -123,6 +123,7 @@ function newCardBack() {
     cardBack.style.display = 'flex'
     cardBack.style.flexDirection = 'column';
     cardBack.style.alignItems = 'center';
+    cardBack.style.lineHeight = '1.7em';
     cardBack.style.transform = 'rotateY(180deg)';
     cardBack.innerHTML = 'Volunteer';
 
@@ -146,9 +147,11 @@ function newCardFront(card) {
     cardFront.style.width = '100%';
     cardFront.style.height = '100%';
     cardFront.style.backfaceVisibility = 'hidden';
+    cardFront.style.fontSize = '1rem';
     cardFront.style.display = 'flex'
     cardFront.style.flexDirection = 'column';
     cardFront.style.alignItems = 'center';
+    cardFront.style.lineHeight = '1.7em';
 
     return cardFront;
 };

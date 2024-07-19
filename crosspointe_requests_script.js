@@ -71,9 +71,9 @@ function newCardContainer() {
         SquareSpace Code Snippet 1
     */
     const yuiDiv = document.getElementById('block-yui_3_17_2_1_1661889157130_2821');
-    const worshipDiv = yuiDiv.querySelector('.sqs-block-content')[0];
-    const worshipInnerDiv = worshipDiv.querySelector('.sqs-html-content')[0];
-    const wednesdayWorshipDiv = worshipInnerDiv.querySelector('h2')[2];
+    const worshipDiv = yuiDiv.querySelector('.sqs-block-content');
+    const worshipInnerDiv = worshipDiv.querySelector('.sqs-html-content');
+    const wednesdayWorshipDiv = worshipInnerDiv.querySelectorAll('h2')[3];
     const card = newCard(wednesdayWorshipDiv);
     cardContainer.appendChild(card);
 
@@ -85,7 +85,7 @@ function newCard(element) {
         Create a basic card for a parent element and its children to be further
         modified later with a card back and a card front.
     */
-    const card = element.querySelectorAll('.row-column')[1];
+    const card = element;
     card.classList.add('card');
     card.style.position = 'absolute';
     card.style.width = '90%';
@@ -171,8 +171,8 @@ function callVolunteers() {
         SquareSpace Code Snippet 2
     */
     const yuiDiv = document.getElementById('block-yui_3_17_2_1_1661889157130_2821');
-    const worshipDiv = yuiDiv.querySelector('.sqs-block-content')[0];
-    const worshipInnerDiv = worshipDiv.querySelector('.sqs-html-content')[0];
+    const worshipDiv = yuiDiv.querySelector('.sqs-block-content');
+    const worshipInnerDiv = worshipDiv.querySelector('.sqs-html-content');
     const cardContainer = newCardContainer();
     const card = cardContainer.querySelector('.card');
     worshipInnerDiv.appendChild(cardContainer);

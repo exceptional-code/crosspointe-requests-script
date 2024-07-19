@@ -56,7 +56,7 @@ function newCardContainer() {
     const cardContainer = document.createElement('div');
     cardContainer.classList.add('card-container');
     cardContainer.style.width = '100%';
-    cardContainer.style.height = 'auto';
+    cardContainer.style.height = '130px';
     cardContainer.style.perspective = '1000px';
 
     /*
